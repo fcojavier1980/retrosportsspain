@@ -1,0 +1,27 @@
+<a [routerLink]="['/home']"><div class="label-tv big-text icon-nav">RETROSPORTS</div></a>
+<div id="slider" class="slider-small">
+    <h1>Login</h1>
+</div>
+<div class="center">
+  <div>
+    <form [formGroup]="loginForm" (ngSubmit)="onLogin(loginForm.value)">
+        <div>
+          <input
+            type="text"
+            matInput
+            placeholder="Username"
+            formControlName="email"
+          />
+        </div>
+        <div>
+          <input
+            type="password"
+            matInput
+            placeholder="Password"
+            formControlName="password"
+          />
+        </div>
+      <button type="submit" mat-raised-button color="primary">Login</button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,56 @@
+<div class="overlay-items">
+	<video id="futbol-bg" src="../../assets/videos/tardelli.mp4" autoplay muted loop></video>
+	<video id="basket-bg" src="../../assets/videos/galis.mp4" autoplay muted loop></video>
+	<video id="nfl-bg" src="../../assets/videos/montana.mp4" autoplay muted loop></video>
+	<video id="boxeo-bg" src="../../assets/videos/lamotta.mp4" autoplay muted loop></video>
+	<div class="container-about">
+		<img src="../../assets/images/about.jpg" id="about-bg" alt="about"> 
+	</div>
+	<div class="container-login">
+		<img src="../../assets/images/login.jpg" id="login-bg" alt="login">
+	</div>	
+</div>
+<div class="overlay-menu">
+	<div class="container-close">
+		<img src="../../assets/images/icon-close.png" alt="close" (click)="showHome();" style="cursor: pointer;"> 
+	</div>
+	<div class="container-menu-header-title big-text-menu-header">
+		RETROSPORTS
+	</div>	
+	<div class="container-menu-items">
+		<a [routerLink]="['/futbol']"  (click)="hideMenu()">
+		<div class="container-menu-label big-text-menu-label menu-futbol">
+			Fútbol
+		</div>	
+		</a>
+		<a [routerLink]="['/basket']" (click)="hideMenu()">
+		<div class="container-menu-label big-text-menu-label menu-basket">
+			Baloncesto
+		</div>	
+		</a>
+		<a [routerLink]="['/nfl']"  (click)="hideMenu()">
+		<div class="container-menu-label big-text-menu-label menu-nfl">
+			Fútbol americano
+		</div>	
+		</a>
+		<a [routerLink]="['/boxeo']"  (click)="hideMenu()">
+		<div class="container-menu-label big-text-menu-label menu-boxeo">
+			Boxeo
+		</div>	
+		</a>
+		<div class="container-menu-label big-text-menu-label menu-about">
+			About us
+		</div>	
+		
+		<a *ngIf="authSvc.userData | async;" (click)="onLogout();">
+		<div class="container-menu-label big-text-menu-label menu-login">
+			Logout
+		</div>	
+		</a>	
+		<a [routerLink]="['/login']" (click)="hideMenu()">
+		<div class="container-menu-label big-text-menu-label menu-login">
+			Login
+		</div>		
+		</a>					
+	</div>
+</div>

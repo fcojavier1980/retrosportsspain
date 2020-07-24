@@ -1,0 +1,76 @@
+
+<div class="home-container" (window:scroll)="showGallery(this)">
+	<div class="main-video">
+		<div class="label-tv big-text">RETROSPORTS <img src="../../assets/images/menu-ham.png" alt="menu" (click)="showMenu();"></div>
+		<div class="down-tv">
+			<img src="../../assets/images/arrow-down.png" alt="down" (click)="arrowDownShow()">
+		</div>
+		<img src="../../assets/images/retrotv.png" id="retrotv" alt="retrotv" width="100%" height="100%"> 
+		<div class="tv-bg"></div>
+		<div>
+		    <video id="video" src="../../assets/videos/cabecera2.mp4" autoplay muted loop></video>
+		</div>              
+	</div>
+	<div class="main-gallery">
+		<div class="celeb-quote">"Hay gente que piensa que el fútbol es una cuestion de vida o muerte, no me gusta esa postura. Es mucho más que eso." <br> Bill Shankly
+		</div>
+		<div class="all-top-zone">
+			<div class="half-left-zone">
+				<div class="zone-map">
+					<a [routerLink]="['/futbol']">
+					<div class="northwest-zone-futbol" (mouseover)="futbolNW_incremento()" (mouseout)="futbolNW_Init()"></div>
+					
+					<div class="northeast-zone-futbol" (mouseover)="futbolNE_incremento()" (mouseout)="futbolNW_Init()"></div>	
+					<div class="southwest-zone-futbol" (mouseover)="futbolSW_incremento()" (mouseout)="futbolNW_Init()"></div>
+					<div class="southeast-zone-futbol"  (mouseover)="futbolSE_incremento()" (mouseout)="futbolNW_Init()"></div>	
+					</a>	
+				</div>		
+				<div class="futbol-rectangle"></div>
+				<div class="futbol-zone">
+					<img src="../../assets/images/futbol.jpg" alt="fútbol">
+
+				</div>	
+			</div>
+			<div class="half-right-zone">
+				<div class="zone-map">
+				<a [routerLink]="['/basket']">	
+					<div class="northwest-zone-basket" (mouseover)="basketNW_incremento()" (mouseout)="basketNW_Init()"></div>
+					<div class="northeast-zone-basket" (mouseover)="basketNE_incremento()" (mouseout)="basketNW_Init()"></div>	
+					<div class="southwest-zone-basket" (mouseover)="basketSW_incremento()" (mouseout)="basketNW_Init()"></div>
+					<div class="southeast-zone-basket"  (mouseover)="basketSE_incremento()" (mouseout)="basketNW_Init()"></div>		
+				</a>	
+				</div>				
+				<div class="basket-rectangle"></div>
+				<div class="basket-zone">
+					<img src="../../assets/images/basket.jpg" alt="basket">						
+				</div>	
+			</div>
+		</div>	
+		<div class="all-medium-zone">
+			<div class="zone-medium" >		
+				<div class="nfl-zone">
+					<a [routerLink]="['/nfl']">
+						<img src="../../assets/images/nfl.jpg" alt="NFL">
+					</a>
+					
+				</div>				
+				<div class="boxeo-zone">
+					<a [routerLink]="['/boxeo']">
+						<img src="../../assets/images/boxeo.jpg" alt="boxeo">	
+					</a>					
+				</div>	
+			</div>
+		</div>
+		<div class="all-bottom-zone">
+			<div class="zone-bottom" >
+	        <footer id="footer">
+            <div class="center">
+                <p>
+                    &copy; RetroSportsSpain
+                </p>
+            </div>
+        </footer>
+			</div>
+		</div>		
+	</div>	
+</div>

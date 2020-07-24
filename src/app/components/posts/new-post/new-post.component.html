@@ -1,0 +1,25 @@
+ <div *ngIf="authSvc.userData" >
+     <form [formGroup]="newPostForm"  (ngSubmit)="addNewPost(newPostForm.value)" id="post-form">  
+        <div style="bottom: 0; z-index: 100; position: absolute; display: none;">    
+            <div style="float: left;">    
+                <div>
+                    <h2 style="float: left;">NEW POST{{authSvc.userData}}</h2>
+                </div>             
+                <div style="float: left;">
+                    <input type="text"  id="title-post" placeholder="title *" formControlName="titlePost" style="border-radius: 4px; height: 22px; width: 200px; float: left;">
+                    <textarea formControlName="contentPost" id="content-post" rows="4" cols="70" placeholder="Comentario" class="small-text-write" style="border-radius: 4px;"></textarea>         
+                    <input type="text"  id="year-post" placeholder="year" formControlName="yearPost" style="border-radius: 4px; height: 22px; width: 200px; float: left;">           
+                    <input type="text"  id="tags-post" placeholder="tags" formControlName="tagsPost" style="border-radius: 4px; height: 22px; width: 200px; float: left;"> 
+                    <input type="text"  id="competition-post" placeholder="competition" formControlName="competitionPost" style="border-radius: 4px; height: 22px; width: 200px; float: left;">  
+                    <input type="text"  id="videoUrl-post" placeholder="videoUrl" formControlName="videoUrl" style="border-radius: 4px; height: 22px; width: 200px; float: left;">
+                    <input type="text"  id="date-post" placeholder="fecha de subida ej(2020-07-21)" formControlName="datePost" style="border-radius: 4px; height: 22px; width: 200px; float: left;">
+                    <input type="text"  id="audio-post" placeholder="idioma" formControlName="audioPost" style="border-radius: 4px; height: 22px; width: 200px; float: left;">
+                    <input type="text"  id="video-post" placeholder="calidad de video" formControlName="videoPost" style="border-radius: 4px; height: 22px; width: 200px; float: left;">                                                                                              
+                </div>
+                <div>
+                    <input type="submit" value="OK" class="btn" style="float: left; margin-left: 45%;"/>
+                </div>
+            </div>   
+        </div>    
+    </form>
+</div>

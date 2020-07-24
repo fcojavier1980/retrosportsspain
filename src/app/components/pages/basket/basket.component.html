@@ -1,0 +1,24 @@
+<a [routerLink]="['/home']"><div class="label-tv big-text icon-nav">RETROSPORTS</div></a>
+<div class="basket-ficha-bg" *ngIf="posts$ | async as posts">
+    <h2 class="subheader-text" id="subheader_last_or_new">BALONCESTO</h2>
+    <!--Listado articulos-->
+    <div id="articles" class="last_articles" *ngFor="let post of posts">
+            <div class="container-ficha" *ngIf="post.tagsPost == 'Basket'">
+                <article class="article-item" id="article-template">
+                    <h2 class="title-text">{{post.titlePost}}<span> - {{post.competitionPost}} </span><span>(</span>{{post.yearPost}}<span>)</span></h2>
+                    <span class="data-text">
+                        {{ post.datePost}}
+                    </span>
+                    <div class="clearfix"></div>
+                </article>
+            <iframe  [src]="getVideoIframe(post.videoUrl)" class="iframe-ficha" style="width: 30%;" frameborder="0" allowfullscreen></iframe>                   
+            </div>
+    </div>
+            <footer id="footer">
+            <div class="center">
+                <p>
+                    &copy; RetroSportsSpain
+                </p>
+            </div>
+        </footer>      
+</div>

@@ -1,1 +1,124 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+font-family: garamond;
+src: url('../src/assets/fonts/garamond-premier-pro-display.otf');
+}
+
+.big-text{
+	font-size: 22px;
+	color: #ffffff;
+	font-weight: bold;
+	text-shadow: 2px 2px 4px #000;
+    /*FUENTES*/
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: antialiased;	
+}
+
+.big-text-menu-header{
+	font-size: 16px;
+	color: #ffffff;
+	font-weight: normal;
+	text-align: center;
+    text-shadow: 2px 2px #000000;
+    /*FUENTES*/
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: antialiased;	
+}
+
+.big-text-menu-label{
+    font-size: 36px;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 2px 2px #000000;
+    /*FUENTES*/
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: antialiased;   
+}
+
+.big-text-menu-label:hover{
+    text-decoration: underline;   
+}
+.menu-futbol:hover ~ .big-text-menu-header {
+  
+    background-color: #ffffff;
+}
+
+.icon-nav{
+    float: right; 
+    cursor: pointer;
+    margin-right: 42px;
+    margin-top: 6px;
+}
+
+.first-color-try{
+    backgroun-color: #dff0d8;
+}
+
+.subheader-text{
+    font-size: 36px;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 2px 2px #000000;
+    /*FUENTES*/
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: antialiased;   
+}
+
+.title-text{
+    font-size: 22px;
+    color: #ffffff;
+    text-shadow: 2px 2px #000000;
+    /*FUENTES*/
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: antialiased;   
+}
+
+.data-text{
+    font-size: 14px;
+    color: #ffffff;
+    text-shadow: 1px 1px #000000;
+    /*FUENTES*/
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: antialiased;   
+}
+
+.container-ficha{
+    padding-bottom: 5%;
+    margin-left: 5%; 
+}
+
+.iframe-ficha{
+    box-shadow: 7px 12px 31px 8px black;
+    border: 5px solid orange;
+    border-radius: 20px;
+
+}
+.center{
+    width: 75%;
+    margin: 0px auto;
+}
+
+#footer{
+    background: #000000;
+    width: 100%;
+    height: 80px;
+    padding-top: 24px;
+    
+
+}
+
+#footer p {
+    text-align: center;
+    color: moccasin;
+}
