@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/retrosports",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

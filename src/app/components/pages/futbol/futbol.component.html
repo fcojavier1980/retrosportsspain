@@ -1,25 +1,32 @@
-<a [routerLink]="['/home']"><div class="label-tv big-text icon-nav">RETROSPORTS</div></a>
-<div class="futbol-ficha-bg" *ngIf="posts$ | async as posts">
-    <h2 class="subheader-text" id="subheader_last_or_new">FÚTBOL</h2>
-    <!--Listado articulos-->
-  	<div id="articles" class="last_articles" *ngFor="let post of posts">
-            <div class="container-ficha" *ngIf="post.tagsPost == 'Fútbol'">
-	            <article class="article-item" id="article-template">
-	                <h2 class="title-text">{{post.titlePost}}<span> - {{post.competitionPost}} </span><span>(</span>{{post.yearPost}}<span>)</span></h2>
-	                <span class="data-text">
-	                    {{ post.datePost}}
-	                </span>
-	                <div class="clearfix"></div>
-	            </article>
-            <iframe  [src]="getVideoIframe(post.videoUrl)" class="iframe-ficha" style="width: 30%;" frameborder="0" allowfullscreen></iframe>   	            
-            </div>
-    </div>
-	        <footer id="footer">
-            <div class="center">
-                <p>
-                    &copy; RetroSportsSpain
-                </p>
-            </div>
-        </footer>    
+<div class="container-nav-label">
+    <a [routerLink]="['/home']">
+        <div class="label-nav big-text icon-nav-label" style="background-color: #000">RETROSPORTS
+            <img src="../../assets/images/icon-home.png" style="height: 18px; width: 18px; margin-left: 10px;">
+        </div>
+    </a>
 </div>
+<div class="futbol-ficha-bg" *ngIf="posts$ | async as posts">
+<div class="subheader-text subheader-label">FUTBOL</div>   
+    <div *ngFor="let post of posts" style="margin-top: 60px;">
+        <div class="card mb-5" style="max-width: 540px; margin-left: 5%;"  *ngIf="post.tagsPost == 'Fútbol'">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <iframe  [src]="getVideoIframe(post.videoUrl)" class="card-img" frameborder="0" allowfullscreen></iframe>   
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">{{post.titlePost}} - {{post.competitionPost}}</h5>
+                        <p class="card-text">{{post.contentPost}}</p>
+                        <p class="card-text"><small class="text-muted">{{post.datePost}}</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div>
+<footer id="footer">
+    <div class="center">
+        <p>&copy; RetroSportsSpain</p>
+    </div>
+</footer>     
 

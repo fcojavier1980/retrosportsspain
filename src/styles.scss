@@ -1,28 +1,38 @@
 @font-face {
 font-family: garamond;
-src: url('../src/assets/fonts/garamond-premier-pro-display.otf');
+src: url('../src/assets/fonts/bonjour.ttf');
 }
 
+@font-face {
+font-family: heinrich;
+src: url('../src/assets/fonts/Sporter.ttf');
+}
+
+
+@font-face {
+font-family: lephnia;
+src: url('../src/assets/fonts/canaveral.otf');
+}
 .big-text{
-	font-size: 22px;
+	font-size: 32px;
 	color: #ffffff;
 	font-weight: bold;
 	text-shadow: 2px 2px 4px #000;
     /*FUENTES*/
-    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'heinrich';
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
     -moz-osx-font-smoothing: antialiased;	
 }
 
 .big-text-menu-header{
-	font-size: 16px;
+	font-size: 32px;
 	color: #ffffff;
 	font-weight: normal;
 	text-align: center;
     text-shadow: 2px 2px #000000;
     /*FUENTES*/
-    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'heinrich';
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
     -moz-osx-font-smoothing: antialiased;	
@@ -34,10 +44,25 @@ src: url('../src/assets/fonts/garamond-premier-pro-display.otf');
     text-align: center;
     text-shadow: 2px 2px #000000;
     /*FUENTES*/
-    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'heinrich';
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
     -moz-osx-font-smoothing: antialiased;   
+}
+
+.celeb-quote{
+    width: 50%;
+    text-align: center;
+    font-size: 36px;
+    margin: 0 auto;
+    margin-top: 5%; 
+    text-shadow: 2px 2px gainsboro;
+    /*FUENTES*/
+    font-family: 'garamond';
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: antialiased;   
+    font-weight: lighter;   
 }
 
 .big-text-menu-label:hover{
@@ -60,12 +85,12 @@ src: url('../src/assets/fonts/garamond-premier-pro-display.otf');
 }
 
 .subheader-text{
-    font-size: 36px;
+    font-size: 48px;
     color: #ffffff;
     text-align: center;
     text-shadow: 2px 2px #000000;
     /*FUENTES*/
-    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'heinrich';
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
     -moz-osx-font-smoothing: antialiased;   
@@ -76,7 +101,7 @@ src: url('../src/assets/fonts/garamond-premier-pro-display.otf');
     color: #ffffff;
     text-shadow: 2px 2px #000000;
     /*FUENTES*/
-    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'heinrich';
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
     -moz-osx-font-smoothing: antialiased;   
@@ -93,6 +118,16 @@ src: url('../src/assets/fonts/garamond-premier-pro-display.otf');
     -moz-osx-font-smoothing: antialiased;   
 }
 
+.year-text{
+    font-size: 14px;
+    color: #ffffff;
+    text-shadow: 1px 1px #000000;
+    /*FUENTES*/
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: antialiased;   
+}
 .container-ficha{
     padding-bottom: 5%;
     margin-left: 5%; 
@@ -121,4 +156,38 @@ src: url('../src/assets/fonts/garamond-premier-pro-display.otf');
 #footer p {
     text-align: center;
     color: moccasin;
+}
+
+.no-gutters{
+    background-color: beige; 
+    box-shadow: 0px 3px 20px 8px black;    
+    border-radius: 5px;
+    border: 5px solid orange;
+}
+
+.subheader-sport{
+
+}
+
+.label-nav{
+    
+}
+
+.icon-nav-label{
+    float: right; 
+    cursor: pointer;
+    margin-right: 28px;
+    padding-top: 6px;
+}
+
+.container-nav-label{
+    width: 100%;
+    background-color: black;
+    height: 56px;    
+}
+.subheader-label{
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-color: brown;
+    box-shadow: 0px 0px 26px 12px black;    
 }
