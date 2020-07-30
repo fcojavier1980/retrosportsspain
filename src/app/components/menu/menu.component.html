@@ -1,8 +1,8 @@
 <div class="overlay-items">
-	<video id="futbol-bg" src="../../assets/videos/tardelli.mp4" autoplay muted loop></video>
-	<video id="basket-bg" src="../../assets/videos/galis.mp4" autoplay muted loop></video>
-	<video id="nfl-bg" src="../../assets/videos/montana.mp4" autoplay muted loop></video>
-	<video id="boxeo-bg" src="../../assets/videos/lamotta.mp4" autoplay muted loop></video>
+	<video id="futbol-bg" class="video-bg" src="../../assets/videos/tardelli.mp4" autoplay muted loop></video>
+	<video id="basket-bg" class="video-bg" src="../../assets/videos/galis.mp4" autoplay muted loop></video>
+	<video id="nfl-bg" class="video-bg" src="../../assets/videos/montana.mp4" autoplay muted loop></video>
+	<video id="boxeo-bg" class="video-bg" src="../../assets/videos/lamotta.mp4" autoplay muted loop></video>
 	<div class="container-about">
 		<img src="../../assets/images/about.jpg" id="about-bg" alt="about"> 
 	</div>
@@ -12,7 +12,7 @@
 </div>
 <div class="overlay-menu">
 	<div class="container-close">
-		<img src="../../assets/images/icon-close.png" alt="close" (click)="showHome();" style="cursor: pointer;"> 
+		<img src="../../assets/images/icon-close.png" alt="close" (click)="showHome();" class="container-close-img"> 
 	</div>
 	<div class="container-menu-header-title big-text-menu-header">
 		RETROSPORTS
@@ -38,10 +38,11 @@
 			Boxeo
 		</div>	
 		</a>
+		<a [routerLink]="['/about']"  (click)="hideMenu()">
 		<div class="container-menu-label big-text-menu-label menu-about">
 			About us
 		</div>	
-		
+		</a>
 		<a *ngIf="authSvc.userData | async;" (click)="onLogout();">
 		<div class="container-menu-label big-text-menu-label menu-login">
 			Logout

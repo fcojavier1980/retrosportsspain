@@ -15,6 +15,7 @@ export class MenuComponent implements OnInit {
 
   ngOnInit(): void {
   	this.menuItemsManagement();
+  	
   }
 
 	menuItemsManagement() {
@@ -30,7 +31,7 @@ export class MenuComponent implements OnInit {
 		    // on mouseout, reset the background colour
 		    $('.overlay-menu').css('background-color', '');
 		    $('.overlay-menu').css('overflow', '');
-		     $('#retrotv').css('display', 'block');
+		    $('#retrotv').css('display', 'block');
 		    $('#video').css('display', 'block');
 		    $('#futbol-bg').css('display', '');		     
 		  });
@@ -45,7 +46,7 @@ export class MenuComponent implements OnInit {
 		    // on mouseout, reset the background colour
 		    $('.overlay-menu').css('background-color', '');
 		    $('.overlay-menu').css('overflow', '');
-		     $('#retrotv').css('display', 'block');
+		    $('#retrotv').css('display', 'block');
 		    $('#video').css('display', 'block');
 		    $('#basket-bg').css('display', '');		     
 		  });	
@@ -60,7 +61,7 @@ export class MenuComponent implements OnInit {
 		    // on mouseout, reset the background colour
 		    $('.overlay-menu').css('background-color', '');
 		    $('.overlay-menu').css('overflow', '');
-		     $('#retrotv').css('display', 'block');
+		    $('#retrotv').css('display', 'block');
 		    $('#video').css('display', 'block');
 		    $('#nfl-bg').css('display', '');		     
 		  });		
@@ -75,7 +76,7 @@ export class MenuComponent implements OnInit {
 		    // on mouseout, reset the background colour
 		    $('.overlay-menu').css('background-color', '');
 		    $('.overlay-menu').css('overflow', '');
-		     $('#retrotv').css('display', 'block');
+		    $('#retrotv').css('display', 'block');
 		    $('#video').css('display', 'block');
 		    $('#boxeo-bg').css('display', '');		     
 		  });	
@@ -91,7 +92,7 @@ export class MenuComponent implements OnInit {
 		    // on mouseout, reset the background colour
 		    $('.overlay-menu').css('background-color', '');
 		    $('.overlay-menu').css('overflow', '');
-		     $('#retrotv').css('display', 'block');
+		    $('#retrotv').css('display', 'block');
 		    $('#video').css('display', 'block');
 		    $('#about-bg').css('display', '');
 		    $('#about-bg').css('zIndex', '');	
@@ -109,13 +110,14 @@ export class MenuComponent implements OnInit {
 		    // on mouseout, reset the background colour
 		    $('.overlay-menu').css('background-color', '');
 		    $('.overlay-menu').css('overflow', '');
-		     $('#retrotv').css('display', 'block');
+		    $('#retrotv').css('display', 'block');
 		    $('#video').css('display', 'block');
 		    $('#login-bg').css('display', '');
 		    $('#login-bg').css('zIndex', '');	
 		    $('#login-bg').css('position', '');	     
 		  });		  		  	    	  
 		});
+
 	}
 
 	showHome(elem=null){
@@ -127,6 +129,8 @@ export class MenuComponent implements OnInit {
 		}, 800, function() {
 		    // Animation complete. 
 		    $('.overlay-menu').hide();
+		    $('.container-close-img').css('display', 'none');
+
 		}); 
 		$( ".container-menu-header-title" ).animate({
 		    marginTop: "-25%",
@@ -181,7 +185,7 @@ export class MenuComponent implements OnInit {
 	hideMenu(){
 		$( ".overlay-menu" ).hide();
 	}
-  onLogout(): void {
-    this.authSvc.logout();
-  }
+  	onLogout(): void {
+    	this.authSvc.logout();
+  	}
 }

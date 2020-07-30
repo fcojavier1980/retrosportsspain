@@ -4,7 +4,10 @@ import { UserI } from '../../../shared/models/user.interface';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
+declare var jQuery:any;
+declare var $:any;
 
+var clave ='';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -12,6 +15,7 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
+  
   constructor(private authSvc: AuthService, private route: Router) { }
 
   loginForm = new FormGroup({
@@ -33,8 +37,11 @@ export class LoginComponent implements OnInit {
       .loginByEmail(form)    
       .then(res => {
       console.log('Succesfully', res);
+      clave="logueado";
+      console.log(clave);
+      $('#new-post-container').css('display', 'ruby');
       this.route.navigate(['/']);
     })
-    .catch(err => console.log('Error', err));
+    .catch(err => alert('¡ Usuario o password INCORRECTO !'));
   }
 }

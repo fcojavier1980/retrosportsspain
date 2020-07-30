@@ -73,6 +73,7 @@ export class HomeComponent implements OnInit {
 		}, 1500, function() {
 		    // Animation complete. 
 		    $('.home-container').hide();
+		    $('.container-close-img').css('display', 'block');
 		}); 
 		$( ".container-menu-header-title" ).animate({
 		    marginTop: "1%",
@@ -194,8 +195,6 @@ export class HomeComponent implements OnInit {
 			cont_zone++
 			//alert(cont_zone);
 			if(cont_zone == 3){
-				console.log(cont_zone);
-				console.log('estás en futbol');
 				$( ".half-left-zone" ).animate({
 			       	 marginTop: "5%",
 			    	}, 800, function() {
@@ -277,9 +276,7 @@ export class HomeComponent implements OnInit {
 		var zone_pos_top = zone_NW.offset().top;
 		var zone_pos_top_round = Math.round(zone_pos_top);
 		var zone_pos_left = zone_NW.offset().left;
-		var zone_pos_left_round = Math.round(zone_pos_left);
-		console.log(box_width);		
-		console.log(box_height);				
+		var zone_pos_left_round = Math.round(zone_pos_left);				
 		//console.log('Caja Posición Top:'+zone_pos_top_round+', Caja Posición Left:'+zone_pos_left_round)			 	
 		$( ".northwest-zone-futbol" ).on( "mousemove", function( event ) {
 		 //console.log( "Ratón Top:" + event.pageY + ", Ratón Left:" + event.pageX );
@@ -399,7 +396,6 @@ export class HomeComponent implements OnInit {
 	} 	
 	mediumZoneInit(){
 
-		console.log('entras en medium init');
 		cont_zone_medium = 0;
 		cont_zone_medium_nfl = 0;
 		this.myStopFunctionMedium();

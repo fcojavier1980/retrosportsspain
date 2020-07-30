@@ -1,6 +1,6 @@
  <div *ngIf="authSvc.userData" >
      <form [formGroup]="newPostForm"  (ngSubmit)="addNewPost(newPostForm.value)" id="post-form">  
-        <div style="bottom: 0; z-index: 100; position: absolute; display: none;">    
+        <div id="new-post-container" style="bottom: 0; z-index: 100; position: absolute; display: none;">    
             <div style="float: left;">    
                 <div>
                     <h2 style="float: left;">NEW POST{{authSvc.userData}}</h2>

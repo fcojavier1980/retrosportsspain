@@ -13,7 +13,8 @@ const routes: Routes = [
 { path: 'nfl', loadChildren: () => import('./components/pages/nfl/nfl.module').then(m => m.NflModule) },
 { path: 'basket', loadChildren: () => import('./components/pages/basket/basket.module').then(m => m.BasketModule) },
 { path: 'boxeo', loadChildren: () => import('./components/pages/boxeo/boxeo.module').then(m => m.BoxeoModule) },
-{ path: 'login', loadChildren: () => import('./components/auth/login/login.module').then(m => m.LoginModule) }, 
+{ path: 'login', loadChildren: () => import('./components/auth/login/login.module').then(m => m.LoginModule) },
+{ path: 'about', loadChildren: () => import('./components/pages/about/about.module').then(m => m.AboutModule) }, 
 ];
 
 @NgModule({

@@ -1,27 +1,45 @@
-<a [routerLink]="['/home']"><div class="label-tv big-text icon-nav">RETROSPORTS</div></a>
-<div id="slider" class="slider-small">
-    <h1>Login</h1>
-</div>
-<div class="center">
-  <div>
-    <form [formGroup]="loginForm" (ngSubmit)="onLogin(loginForm.value)">
-        <div>
-          <input
-            type="text"
-            matInput
-            placeholder="Username"
-            formControlName="email"
-          />
+<div class="container-nav-label">
+    <a [routerLink]="['/home']">
+        <div class="label-nav big-text icon-nav-label" style="background-color: #000">RETROSPORTS
+            <img src="../../assets/images/icon-home.png" style="height: 18px; width: 18px; margin-left: 10px;">
         </div>
-        <div>
-          <input
-            type="password"
-            matInput
-            placeholder="Password"
-            formControlName="password"
-          />
-        </div>
-      <button type="submit" mat-raised-button color="primary">Login</button>
-    </form>
-  </div>
+    </a>
 </div>
+<div>
+<div class="subheader-text subheader-label">LOGIN</div>   
+    <div style="margin-top: 100px;">
+        <div class="card mb-5" style="max-width: 540px; margin: 0 auto;">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    
+                </div>
+                <div class="col-md-8" style="margin-top: 20px;">
+                  <form [formGroup]="loginForm" (ngSubmit)="onLogin(loginForm.value)">
+                      <div>
+                        <input
+                          type="text"
+                          matInput
+                          placeholder="Usuario"
+                          formControlName="email"
+                        />
+                      </div>
+                      <div style="margin-top: 20px; margin-bottom: 30px;">
+                        <input
+                          type="password"
+                          matInput
+                          placeholder="Password"
+                          formControlName="password"
+                        />
+                      </div>
+                      <button type="submit" class="btn btn-secondary" style="margin-bottom: 40px;">Login</button>
+                  </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<div>
+<footer id="footer">
+    <div class="center">
+        <p>&copy; RetroSportsSpain</p>
+    </div>
+</footer>     
