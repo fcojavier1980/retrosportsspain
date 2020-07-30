@@ -38,7 +38,6 @@ export class LoginComponent implements OnInit {
       .then(res => {
       console.log('Succesfully', res);
       clave="logueado";
-      console.log(clave);
       $('#new-post-container').css('display', 'ruby');
       this.route.navigate(['/']);
     })

@@ -17,13 +17,12 @@
 		<div class="all-top-zone">
 			<div class="half-left-zone">
 				<div class="zone-map">
-					<a [routerLink]="['/futbol']">
 					<div class="northwest-zone-futbol" (mouseover)="futbolNW_incremento()" (mouseout)="futbolNW_Init()"></div>
 					
 					<div class="northeast-zone-futbol" (mouseover)="futbolNE_incremento()" (mouseout)="futbolNW_Init()"></div>	
 					<div class="southwest-zone-futbol" (mouseover)="futbolSW_incremento()" (mouseout)="futbolNW_Init()"></div>
 					<div class="southeast-zone-futbol"  (mouseover)="futbolSE_incremento()" (mouseout)="futbolNW_Init()"></div>	
-					</a>	
+	
 				</div>		
 				<div class="futbol-rectangle"></div>
 				<div class="futbol-zone">
@@ -33,12 +32,12 @@
 			</div>
 			<div class="half-right-zone">
 				<div class="zone-map">
-				<a [routerLink]="['/basket']">	
+
 					<div class="northwest-zone-basket" (mouseover)="basketNW_incremento()" (mouseout)="basketNW_Init()"></div>
 					<div class="northeast-zone-basket" (mouseover)="basketNE_incremento()" (mouseout)="basketNW_Init()"></div>	
 					<div class="southwest-zone-basket" (mouseover)="basketSW_incremento()" (mouseout)="basketNW_Init()"></div>
 					<div class="southeast-zone-basket"  (mouseover)="basketSE_incremento()" (mouseout)="basketNW_Init()"></div>		
-				</a>	
+
 				</div>				
 				<div class="basket-rectangle"></div>
 				<div class="basket-zone">
@@ -49,15 +48,11 @@
 		<div class="all-medium-zone">
 			<div class="zone-medium" >		
 				<div class="nfl-zone">
-					<a [routerLink]="['/nfl']">
 						<img src="../../assets/images/nfl.jpg" alt="NFL">
-					</a>
 					
 				</div>				
 				<div class="boxeo-zone">
-					<a [routerLink]="['/boxeo']">
-						<img src="../../assets/images/boxeo.jpg" alt="boxeo">	
-					</a>					
+						<img src="../../assets/images/boxeo.jpg" alt="boxeo">					
 				</div>	
 			</div>
 		</div>
