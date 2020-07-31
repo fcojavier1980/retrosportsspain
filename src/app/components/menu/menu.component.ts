@@ -124,6 +124,7 @@ export class MenuComponent implements OnInit {
 		//var ventana = $('.home-container');
 		//console.log($(ventana)[0].offsetTop);
 		$('.home-container').show();
+		$('#down-tv-img').show();
 		$( ".overlay-menu" ).animate({
 		    height: "0%",
 		}, 800, function() {

@@ -68,6 +68,7 @@ export class HomeComponent implements OnInit {
 		//var ventana = $('.home-container');
 		//console.log($(ventana)[0].offsetTop);
 		$('.overlay-menu').show();
+		$('#down-tv-img').hide();
 		$( ".overlay-menu" ).animate({
 		    height: "100%",
 		}, 1500, function() {
